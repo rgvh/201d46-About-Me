@@ -5,7 +5,7 @@ var laptopTypeResponse = prompt('Do I use a Windows/Linux machine for class?');
 console.log(laptopTypeResponse);
 
 // Collect response and alert
-if (laptopTypeResponse.toUpperCase()  === 'N' || laptopTypeResponse.toUpperCase() === 'NO'){
+if (laptopTypeResponse.toUpperCase() === 'N' || laptopTypeResponse.toUpperCase() === 'NO'){
     console.log('That\'s correct, I have a Mac!');
 } else if (laptopTypeResponse.toUpperCase() === 'Y' || laptopTypeResponse.toUpperCase() === 'YES'){
     console.log('No, I use a Mac in class.');

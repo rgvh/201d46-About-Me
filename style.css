@@ -1,1 +1,19 @@
-h1 align = center
+/* stylesheet for Guessing Game */
+body {
+    background: rgb(255,234,0);
+    
+}
+h1 {
+    color: red;
+    text-align: center;
+    margin: 6px line limegreen;
+
+}
+h2 {
+    color: blue;
+    font-style: italic
+
+}
+ol {
+    color: green;
+}
