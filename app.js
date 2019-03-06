@@ -1,5 +1,20 @@
 'use strict';
 
+/*
+The objective is to turn "About-Me" into an job seeker profile structured as an
+interactive quiz.  The quiz will have 7 questions that will provide potential employers
+with a personal yet profession impression of me.
+Technical requirements for this iteration:
+Add atleast 1 ordered and 1 unorder list
+Do not write functions in JavaScript (not sure about what this means?)
+6th question a guessing game with one correct answer and the 7th a game with multiple
+correct answers.
+*/
+// TO DO: Incorporate Arrays
+// TO DO: Make the guessing game incorporate a random number as the correct answer
+// TO DO: Move the guessing game to a seperate HTML
+// TODO:  Add code to inform user of an out of bounds response and take them back to the question again
+
 // Declare a variable for laptop type response
 var laptopTypeResponse = prompt('Do I use a Windows/Linux machine for class?');
 console.log(laptopTypeResponse);
@@ -47,5 +62,5 @@ if (correctName.toUpperCase() === 'N' || correctName.toUpperCase() === 'NO'){
 } else if (correctName.toUpperCase() === 'Y' || correctName.toUpperCase() === 'YES'){
     console.log('Hi, I\'m Richard, great to meet you!');
 }
-// TODO:  Add code to inform user of an out of bounds response and take them back to the question again
+
 
