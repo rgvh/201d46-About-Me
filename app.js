@@ -21,6 +21,9 @@ alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this m
 
 // Q1 asking about my coding experience
 
+function question1 (){
+
+
 var codingExperience = prompt('Prior to CodeFellows, did I have any coding experience?');
 console.log(codingExperience);
 
@@ -36,13 +39,17 @@ if (lowerCodingExperience === 'yes' || lowerCodingExperience === 'y' ){
 } else if (lowerCodingExperience === 'no' || lowerCodingExperience === 'n'){
     console.log('Yes, I\'m new to this, but its fun!');
 }
+ 
+}
+
+question1();
 
 // Q2 asking about my prior career
-
+function question2(){
 var priorField = prompt('Did I used to work in finance?');
 console.log(priorField);
 
-var lowerPriorField = priorField.toLowerCase()
+var lowerPriorField = priorField.toLowerCase();
 
 if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
     console.log('Yes, my prior career was in finance.');
@@ -50,20 +57,29 @@ if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
     console.log('Sorry, but I worked in finance for many years.');
 }
 
-// Q3 asking about my overseas experience
+}
 
+question2();
+
+// Q3 asking about my overseas experience
+function question3(){
 var overseasExp = prompt('Have I worked overseas?');
-console.log(priorField);
+console.log(overseasExp);
 
 var lowerOverseasExp = overseasExp.toLowerCase();
+console.log('exp: ' + lowerOverseasExp);
 
-if(lowerCodingExperience === 'yes' || lowerOverseasExp === 'y' ){
+if(lowerOverseasExp === 'yes' || lowerOverseasExp === 'y' ){
     console.log('Correct, I was in Hong Kong for three years.');
 } else if(lowerOverseasExp === 'no' || lowerOverseasExp === 'n'){
     console.log('Actually, I worked in Hong Kong for three years.');
 }
+}
+question3();
 
 // Q4 asking about product management experience
+
+function question4(){
 
 var productMgmt = prompt('Do I have product management experience?');
 console.log(productMgmt);
@@ -75,8 +91,12 @@ if(lowerProductMgmt === 'yes' || lowerProductMgmt === 'y' ){
 } else if(lowerProductMgmt === 'no' || lowerProductMgmt === 'n'){
     console.log('While I didn\'t have a title of PM, it was my functional role.');
 }
+}
+question4();
 
 // Q5 asking about startup interest
+
+function question5(){
 
 var startupInterest = prompt('Am I interested in startups?');
 console.log(startupInterest);
@@ -88,10 +108,14 @@ if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
 } else if(lowerStartupInterest === 'no' || lowerStartupInterest === 'n'){
     console.log('Actually, I\'ve been working with startups for the last three years.');
 }
+}
+question5();
 
 // Q6  guesses
+
 alert('Now you have four guesses to get to know something about me.');
 
+function question6(){
 var numGuesses = 0;
 var yearsWorked = prompt('How many years did I live in New York?');
 
@@ -114,6 +138,9 @@ console.log('You guess right!');
 if(yearsWorked !== 13);
 console.log('Better luck next time.');
 }
+
+}
+question6();
 /* Notes on Q6 status: Loop is currently not functioning correctly: var yearsWorked given in prompt is not getting stored therefore
 the conditional if statements on the value may not be correct after first attempt.   Ideas to try: move things around, create an array
 and pop the last value (this could also then be used to limit number of guesses using array length).
