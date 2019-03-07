@@ -5,9 +5,9 @@ The objective is to turn "About-Me" into an job seeker profile structured as an
 interactive quiz.  The quiz will have 7 questions that will provide potential employers
 with a personal yet profession impression of me.
 Technical requirements for this iteration:
-Add at least 1 ordered and 1 unordered list
-Do not write functions in JavaScript (not sure about what this means?)
-6th question a guessing game with one correct answer and the 7th a game with multiple
+-Add at least 1 ordered and 1 unordered list
+-Do not write functions in JavaScript (not sure about what this means?)
+-6th question a guessing game with one correct answer and the 7th a game with multiple
 correct answers.
 */
 // TODO: Incorporate Arrays
@@ -96,12 +96,16 @@ var numGuesses = 0;
 var yearsWorked = prompt('How many years did I live in New York?');
 
 while ((yearsWorked > 13 || yearsWorked <13) && numGuesses <4){
-    if(yearsWorked > 13);
+    ++numGuesses
+    if(yearsWorked > 13){
     alert('Not that many. Guess again.');
-    if (yearsWorked < 13);
-    alert('It was longer than that. Guess again');
     console.log(yearsWorked);
-    numGuesses++
+    }
+    if (yearsWorked < 13){
+    alert('It was longer than that. Guess again.');
+    console.log(yearsWorked);
+    }
+    // numGuesses++
     prompt('How many years did I live in New York?');
 }
 
@@ -110,7 +114,10 @@ console.log('You guess right!');
 if(yearsWorked !== 13);
 console.log('Better luck next time.');
 }
-
+/* Notes on Q6 status: Loop is currently not functioning correctly: var yearsWorked given in prompt is not getting stored therefore
+the conditional if statements on the value may not be correct after first attempt.   Ideas to try: move things around, create an array
+and pop the last value (this could also then be used to limit number of guesses using array length).
+*/
 
 // Q7 select from an array
 
