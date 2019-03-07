@@ -17,7 +17,7 @@ correct answers.
 
 // 5 Yes or No questions that provide some information about me
 // Declare a variable for coding experience
-alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this might be easy.')
+alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this might be easy.');
 
 // Q1 asking about my coding experience
 
@@ -90,16 +90,19 @@ if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
 }
 
 // Q6  guesses
-alert('Now you have four guesses to get to know something about me.')
+alert('Now you have four guesses to get to know something about me.');
 
 var numGuesses = 0;
-var yearsWorked = prompt('How many years did I live in New York?')
-numGuesses++
+var yearsWorked = prompt('How many years did I live in New York?');
+
 while ((yearsWorked > 13 || yearsWorked <13) && numGuesses <4){
     if(yearsWorked > 13);
-    alert('Not that many. Guess again.')
-    else if (yearsWorked < 13);
-    alert('It was longer than that. Guess again')
+    alert('Not that many. Guess again.');
+    if (yearsWorked < 13);
+    alert('It was longer than that. Guess again');
+    console.log(yearsWorked);
+    numGuesses++
+    prompt('How many years did I live in New York?');
 }
 
 
