@@ -84,14 +84,23 @@ console.log(startupInterest);
 var lowerStartupInterest = startupInterest.toLowerCase();
 
 if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
-    console.log('Correct, I really like working with them.');
+    console.log('Correct, I really like working with startups.');
 } else if(lowerStartupInterest === 'no' || lowerStartupInterest === 'n'){
     console.log('Actually, I\'ve been working with startups for the last three years.');
-
-
 }
 
-// Q6 5 guesses
+// Q6  guesses
+alert('Now you have four guesses to get to know something about me.')
+
+var numGuesses = 0;
+var yearsWorked = prompt('How many years did I live in New York?')
+numGuesses++
+while ((yearsWorked > 13 || yearsWorked <13) && numGuesses <4){
+    if(yearsWorked > 13);
+    alert('Not that many. Guess again.')
+    else if (yearsWorked < 13);
+    alert('It was longer than that. Guess again')
+}
 
 
 // Q7 select from an array
