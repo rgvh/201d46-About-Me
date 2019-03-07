@@ -19,24 +19,30 @@ correct answers.
 // Declare a variable for coding experience
 alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this might be easy.')
 
+// Q1 asking about my coding experience
+
 var codingExperience = prompt('Prior to CodeFellows, did I have any coding experience?');
 console.log(codingExperience);
 
-var lowerCodingExperience = codingExperience.toLocaleLowerCase();
+var lowerCodingExperience = codingExperience.toLowerCase();
+
 //  the code below resulted in an infite loop
 // while (lowerCodingExperience !== 'y' || lowerCodingExperience !== 'yes' || lowerCodingExperience !== 'n'|| lowerCodingExperience !== 'no'){
 //     alert('Please answer yes or no.');
 // }
+
 if (lowerCodingExperience === 'yes' || lowerCodingExperience === 'y' ){
     console.log('Aside from a few spreadsheet macros and some SQL, this is new to me.');
 } else if (lowerCodingExperience === 'no' || lowerCodingExperience === 'n'){
     console.log('Yes, I\'m new to this, but its fun!');
 }
 
+// Q2 asking about my prior career
+
 var priorField = prompt('Did I used to work in finance?');
 console.log(priorField);
 
-var lowerPriorField = priorField.toLocaleLowerCase();
+var lowerPriorField = priorField.toLowerCase()
 
 if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
     console.log('Yes, my prior career was in finance.');
@@ -44,45 +50,51 @@ if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
     console.log('Sorry, but I worked in finance for many years.');
 }
 
+// Q3 asking about my overseas experience
+
 var overseasExp = prompt('Have I worked overseas?');
 console.log(priorField);
 
-var lowerOverseasExp = overseasExp.toLocaleLowerCase();
+var lowerOverseasExp = overseasExp.toLowerCase();
 
 if(lowerCodingExperience === 'yes' || lowerOverseasExp === 'y' ){
-    console.log('Correct, I was in Hong Kong for three years');
+    console.log('Correct, I was in Hong Kong for three years.');
 } else if(lowerOverseasExp === 'no' || lowerOverseasExp === 'n'){
     console.log('Actually, I worked in Hong Kong for three years.');
 }
 
+// Q4 asking about product management experience
 
-// Repeat the above functions for overseasExp, correctName
+var productMgmt = prompt('Do I have product management experience?');
+console.log(productMgmt);
 
-// var eyeColorResponse = prompt('Do I have blue eyes?');
-//     console.log(eyeColorResponse);
+var lowerProductMgmt = productMgmt.toLowerCase();
 
-// if (eyeColorResponse.toUpperCase() === 'N' || eyeColorResponse.toUpperCase() === 'NO'){
-//     console.log('That\'s right, I have brown eyes');
-// } else if (eyeColorResponse.toUpperCase() === 'Y' || eyeColorResponse.toUpperCase() === 'YES'){
-//     console.log('I have brown eyes.');
-// }
+if(lowerProductMgmt === 'yes' || lowerProductMgmt === 'y' ){
+    console.log('I\'ve had roles in product management and product development.');
+} else if(lowerProductMgmt === 'no' || lowerProductMgmt === 'n'){
+    console.log('While I didn\'t have a title of PM, it was my functional role.');
+}
 
-// var overseasExp = prompt('Did I used to work overseas?');
-//     console.log(overseasExp);
+// Q5 asking about startup interest
 
-// if (overseasExp.toUpperCase() === 'N' || overseasExp.toUpperCase() === 'NO'){
-//     console.log('Actually, I worked in Hong Kong for three years.');
-// } else if (overseasExp.toUpperCase() === 'Y' || overseasExp.toUpperCase() === 'YES'){
-//     console.log('Yes, I was in Hong Kong for three years');
-// }
+var startupInterest = prompt('Am I interested in startups?');
+console.log(startupInterest);
 
-// var correctName = prompt('Is my name Richard?');
-//     console.log(correctName);
+var lowerStartupInterest = startupInterest.toLowerCase();
 
-// if (correctName.toUpperCase() === 'N' || correctName.toUpperCase() === 'NO'){
-//     console.log('Oh, I thought you would have guessed who I was after 4 questions.');
-// } else if (correctName.toUpperCase() === 'Y' || correctName.toUpperCase() === 'YES'){
-//     console.log('Hi, I\'m Richard, great to meet you!');
-// }
+if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
+    console.log('Correct, I really like working with them.');
+} else if(lowerStartupInterest === 'no' || lowerStartupInterest === 'n'){
+    console.log('Actually, I\'ve been working with startups for the last three years.');
+
+
+}
+
+// Q6 5 guesses
+
+
+// Q7 select from an array
+
 
 
