@@ -21,6 +21,9 @@ alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this m
 
 // Q1 asking about my coding experience
 
+function question1 (){
+
+
 var codingExperience = prompt('Prior to CodeFellows, did I have any coding experience?');
 console.log(codingExperience);
 
@@ -36,6 +39,10 @@ if (lowerCodingExperience === 'yes' || lowerCodingExperience === 'y' ){
 } else if (lowerCodingExperience === 'no' || lowerCodingExperience === 'n'){
     console.log('Yes, I\'m new to this, but its fun!');
 }
+ 
+}
+
+question1();
 
 // Q2 asking about my prior career
 
@@ -56,8 +63,9 @@ var overseasExp = prompt('Have I worked overseas?');
 console.log(priorField);
 
 var lowerOverseasExp = overseasExp.toLowerCase();
+console.log('exp: ' + lowerOverseasExp);
 
-if(lowerCodingExperience === 'yes' || lowerOverseasExp === 'y' ){
+if(lowerOverseasExp === 'yes' || lowerOverseasExp === 'y' ){
     console.log('Correct, I was in Hong Kong for three years.');
 } else if(lowerOverseasExp === 'no' || lowerOverseasExp === 'n'){
     console.log('Actually, I worked in Hong Kong for three years.');
