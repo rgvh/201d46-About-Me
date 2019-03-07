@@ -105,6 +105,12 @@ while ((yearsWorked > 13 || yearsWorked <13) && numGuesses <4){
     prompt('How many years did I live in New York?');
 }
 
+if(yearsWorked === 13){
+console.log('You guess right!');
+if(yearsWorked !== 13);
+console.log('Better luck next time.');
+}
+
 
 // Q7 select from an array
 
