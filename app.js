@@ -121,5 +121,7 @@ and pop the last value (this could also then be used to limit number of guesses 
 
 // Q7 select from an array
 
+var states = ["Washington", "New Jersey", "New York", "DC"];
+
 
 
