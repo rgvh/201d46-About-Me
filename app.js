@@ -17,99 +17,109 @@ correct answers.
 
 // 5 Yes or No questions that provide some information about me
 // Declare a variable for coding experience
-alert('Welcome to my quiz! If you\'ve seen my LinkedIn profile or resume, this might be easy.');
+alert('Welcome to my quiz! Answer some questions to see how well you know me.');
 
 // Q1 asking about my coding experience
 
-function question1 (){
+// function question1 (){
 
 
-var codingExperience = prompt('Prior to CodeFellows, did I have any coding experience?');
-console.log(codingExperience);
+// var codingExperience = prompt('Prior to CodeFellows, did I have any coding experience?');
+// console.log(codingExperience);
 
-var lowerCodingExperience = codingExperience.toLowerCase();
+// var lowerCodingExperience = codingExperience.toLowerCase();
 
-//  the code below resulted in an infite loop
-// while (lowerCodingExperience !== 'y' || lowerCodingExperience !== 'yes' || lowerCodingExperience !== 'n'|| lowerCodingExperience !== 'no'){
-//     alert('Please answer yes or no.');
+// //  the code below resulted in an infite loop
+// // while (lowerCodingExperience !== 'y' || lowerCodingExperience !== 'yes' || lowerCodingExperience !== 'n'|| lowerCodingExperience !== 'no'){
+// //     alert('Please answer yes or no.');
+// // }
+
+// if (lowerCodingExperience === 'yes' || lowerCodingExperience === 'y' ){
+//     console.log('Aside from a few spreadsheet macros and some SQL, this is new to me.');
+// } else if (lowerCodingExperience === 'no' || lowerCodingExperience === 'n'){
+//     console.log('Yes, I\'m new to this, but its fun!');
+// }
+ 
 // }
 
-if (lowerCodingExperience === 'yes' || lowerCodingExperience === 'y' ){
-    console.log('Aside from a few spreadsheet macros and some SQL, this is new to me.');
-} else if (lowerCodingExperience === 'no' || lowerCodingExperience === 'n'){
-    console.log('Yes, I\'m new to this, but its fun!');
-}
- 
-}
-
-question1();
+// question1();
 
 // Q2 asking about my prior career
-function question2(){
-var priorField = prompt('Did I used to work in finance?');
-console.log(priorField);
+// function question2(){
+// var priorField = prompt('Did I used to work in finance?');
+// console.log(priorField);
 
-var lowerPriorField = priorField.toLowerCase();
+// var lowerPriorField = priorField.toLowerCase();
 
-if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
-    console.log('Yes, my prior career was in finance.');
-} else if(lowerPriorField === 'no' || lowerPriorField === 'n'){
-    console.log('Sorry, but I worked in finance for many years.');
-}
+// if(lowerPriorField === 'yes' || lowerPriorField === 'y' ){
+//     console.log('Yes, my prior career was in finance.');
+// } else if(lowerPriorField === 'no' || lowerPriorField === 'n'){
+//     console.log('Sorry, but I worked in finance for many years.');
+// }
 
-}
-
-question2();
+// }
+// 
+// question2();
 
 // Q3 asking about my overseas experience
-function question3(){
-var overseasExp = prompt('Have I worked overseas?');
-console.log(overseasExp);
+// function question3(){
+// var overseasExp = prompt('Have I worked overseas?');
+// console.log(overseasExp);
 
-var lowerOverseasExp = overseasExp.toLowerCase();
-console.log('exp: ' + lowerOverseasExp);
+// var lowerOverseasExp = overseasExp.toLowerCase();
+// console.log('exp: ' + lowerOverseasExp);
 
-if(lowerOverseasExp === 'yes' || lowerOverseasExp === 'y' ){
-    console.log('Correct, I was in Hong Kong for three years.');
-} else if(lowerOverseasExp === 'no' || lowerOverseasExp === 'n'){
-    console.log('Actually, I worked in Hong Kong for three years.');
-}
-}
-question3();
+// if(lowerOverseasExp === 'yes' || lowerOverseasExp === 'y' ){
+//     console.log('Correct, I was in Hong Kong for three years.');
+// } else if(lowerOverseasExp === 'no' || lowerOverseasExp === 'n'){
+//     console.log('Actually, I worked in Hong Kong for three years.');
+// }
+// }
+// question3();
 
 // Q4 asking about product management experience
 
-function question4(){
+// function question4(){
 
-var productMgmt = prompt('Do I have product management experience?');
-console.log(productMgmt);
+// var productMgmt = prompt('Do I have product management experience?');
+// console.log(productMgmt);
 
-var lowerProductMgmt = productMgmt.toLowerCase();
+// var lowerProductMgmt = productMgmt.toLowerCase();
 
-if(lowerProductMgmt === 'yes' || lowerProductMgmt === 'y' ){
-    console.log('I\'ve had roles in product management and product development.');
-} else if(lowerProductMgmt === 'no' || lowerProductMgmt === 'n'){
-    console.log('While I didn\'t have a title of PM, it was my functional role.');
-}
-}
-question4();
+// if(lowerProductMgmt === 'yes' || lowerProductMgmt === 'y' ){
+//     console.log('I\'ve had roles in product management and product development.');
+// } else if(lowerProductMgmt === 'no' || lowerProductMgmt === 'n'){
+//     console.log('While I didn\'t have a title of PM, it was my functional role.');
+// }
+// }
+// question4();
 
 // Q5 asking about startup interest
 
-function question5(){
+// function question5(){
 
-var startupInterest = prompt('Am I interested in startups?');
-console.log(startupInterest);
+// var startupInterest = prompt('Am I interested in startups?');
+// console.log(startupInterest);
 
-var lowerStartupInterest = startupInterest.toLowerCase();
+// var lowerStartupInterest = startupInterest.toLowerCase();
 
-if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
-    console.log('Correct, I really like working with startups.');
-} else if(lowerStartupInterest === 'no' || lowerStartupInterest === 'n'){
-    console.log('Actually, I\'ve been working with startups for the last three years.');
-}
-}
-question5();
+// if(lowerStartupInterest === 'yes' || lowerStartupInterest === 'y' ){
+//     console.log('Correct, I really like working with startups.');
+// } else if(lowerStartupInterest === 'no' || lowerStartupInterest === 'n'){
+//     console.log('Actually, I\'ve been working with startups for the last three years.');
+// }
+// }
+// question5();
+
+
+
+
+
+
+
+
+
+
 
 // Q6  guesses
 
