@@ -2,18 +2,18 @@
 
 /*
 The objective is to turn "About-Me" into an job seeker profile structured as an
-interactive quiz.  The quiz will have 7 questions that will provide potential employers
-with a personal yet profession impression of me.
+interactive quiz.  The quiz will have 7 questions that will reveal some information
+about me.
 Technical requirements for this iteration:
 -Add at least 1 ordered and 1 unordered list
--Do not write functions in JavaScript (not sure about what this means?)
+-Do not write functions in JavaScript (Prior to Lab 4)
 -6th question a guessing game with one correct answer and the 7th a game with multiple
 correct answers.
 */
 // TODO: Incorporate Arrays
 // TODO: Make the guessing game incorporate a random number as the correct answer
 // TODO: Move the guessing game to a seperate HTML
-// TODO:  Add code to inform user of an out of bounds response and take them back to the question again
+// TODO: Add code to inform user of an out of bounds response and take them back to the question again
 
 // 5 Yes or No questions that provide some information about me
 // Declare a variable for coding experience
@@ -111,8 +111,35 @@ alert('Welcome to my quiz! Answer some questions to see how well you know me.');
 // }
 // question5();
 
+var survey = 0
+var questionArray = ['Have I been coding long?', 'Did I used to work in finance?', 'Did I work abroad?', 'Was my title ever Product Manager?', 'Do I like startups?' ]
+// var yesses = ['YES', 'Yes', 'yes', 'Y', 'y']
+// var noooos = ['NO', 'No', 'no', 'N', 'n']
+var answerArray = ['no', 'yes', 'yes', 'no', 'yes']
+var correctResponseArray = ['Yeah, I just started.', 'Yes, I was in finance for a long time.','How did you know that.', 'That right, it wasn\'t my title', 'Yes, I do.']
+var incorrectResponseArray = ['I just started.', 'Wrong, unfortunately.', 'Nope, I lived in Hong Kong for 3 years.', 'Had the job, not the title.', 'Are you kidding?']
 
+for(var i = 0; i < questionArray.length; i++){
+    var survey = 0
 
+    do {
+        var survey = prompt(questionArray[i]);
+        // var lowerSurvey = survey.toLowerCase();
+    } while (!survey);
+    
+    if (survey === answerArray[i]) {
+        alert(correctResponseArray[i]);
+        console.log(correctResponseArray[i]);
+
+    }else if ( incorrectResponseArray[i].includes( survey ) ){
+        alert(incorrectResponseArray[i]);
+        console.log(incorrectResponseArray[i]);
+
+    // }else{
+    //     alert('Please answer yes or no.')
+    }
+console.log('given: ' + survey + ' correct: ' + answerArray[i]);
+}
 
 
 
